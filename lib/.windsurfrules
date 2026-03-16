@@ -1,0 +1,19 @@
+# Project Overview
+This is a Flutter Web portfolio application connected to a Supabase PostgreSQL backend.
+
+# Tech Stack
+- Frontend: Flutter (Web optimized), Dart
+- Backend: Supabase (PostgreSQL, Authentication)
+- Deployment: GitHub Actions (CI/CD) to Cloud Storage
+
+# Coding Conventions
+- Use modular, reusable Flutter widgets (e.g., keep Hero, ProjectGrid, and Experience in separate files).
+- Keep state management lightweight to ensure optimal web load times.
+- Ensure all UI components are mobile-first and fully responsive.
+- Write optimized PostgreSQL queries for the Supabase integration to prevent UI lag.
+
+# Rules & Anti-Patterns
+- Never generate raw HTML/CSS/JS; always use the Flutter framework equivalents.
+- Avoid heavy, third-party animation packages; rely on Flutter's built-in implicit animations and `AnimationController`.
+- Prioritize SEO and accessibility best practices in the `web/index.html` wrapper before the Flutter engine initializes.
+- When generating SQL, always include Row Level Security (RLS) policies.
