@@ -230,7 +230,11 @@ class HeroSection extends StatelessWidget {
   }
 
   Future<void> _launchResume() async {
-    // TODO: Replace with actual resume URL
+    // Replace this URL with your actual resume link
+    // Examples: 
+    // - Google Drive: https://drive.google.com/file/d/YOUR_FILE_ID/view
+    // - Dropbox: https://www.dropbox.com/s/YOUR_FILE_ID/resume.pdf
+    // - Personal site: https://yoursite.com/resume.pdf
     final Uri resumeUrl = Uri.parse('https://example.com/resume.pdf');
     if (!await launchUrl(resumeUrl)) {
       debugPrint('Could not launch resume URL');
